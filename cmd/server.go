@@ -31,7 +31,7 @@ to quickly create a Cobra application.`,
 
 func init() {
 
-	serverCmd.Flags().IntVarP(&port, "port", "p", 8080, "Default Port For HTTP Server")
+	serverCmd.Flags().IntVarP(&port, "port", "p", 7127, "Default Port For HTTP Server")
 
 	rootCmd.AddCommand(serverCmd)
 

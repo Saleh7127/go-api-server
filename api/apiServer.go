@@ -25,9 +25,9 @@ func CheckServer(port int) {
 
 	router.Get("/players", auth.IsAuthorized(handler.AllPlayer))
 	router.Get("/player/{name}", auth.IsAuthorized(handler.PlayerSearch))
-	router.Post("/players", auth.IsAuthorized(handler.CreateNewEntry))
-	router.Put("/player/{name}", auth.IsAuthorized(handler.UpdatePlayer))
-	router.Delete("/player/{name}", auth.IsAuthorized(handler.DeletePlayer))
+	router.Post("/players/new", auth.IsAuthorized(handler.CreateNewEntry))
+	router.Put("/update/{name}", auth.IsAuthorized(handler.UpdatePlayer))
+	router.Delete("/delete/{name}", auth.IsAuthorized(handler.DeletePlayer))
 
 	log.Fatal(http.ListenAndServe(":"+strconv.Itoa(port), router))
 }
