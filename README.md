@@ -38,7 +38,7 @@ type Stats struct {
 
 | Method |                    url                    | payload | actions                                  |
 |--------|:-----------------------------------------:|--------:|------------------------------------------|
-| GET    |       ```http://localhost:71727/```       |      No | Call home page and get new token         |
+| GET    |       ```http://localhost:71727/```       |      No | Call home page and generate new token    |
 | GET    |    ```http://localhost:7127/players```    |      No | Call all the players from data model     |
 | GET    | ```http://localhost:7127/player/{name}``` |      No | Call by a specific player name           |
 | POST   |  ```http://localhost:7127/players/new```  |     Yes | Add new player to the data base          |
