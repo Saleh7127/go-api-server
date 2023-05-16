@@ -1,4 +1,3 @@
-## go-api-server ##
 # Basic api server for CRUD operation in GO  <br>
 ## Technology ##
 - Golang
