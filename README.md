@@ -52,9 +52,9 @@ Example: <br>
 
 Token Flag: -H "Authorization:Bearer <JWT Token(Header.Payload.Signature)>"
 
-GET : curl -X GET http://localhost:7127/players
-POST : curl -X POST http://localhost:7127/players/new -d ' < new data > '
-PUT : curl -X POST http://localhost:7127/update/{name} -d ' < updated data > '
+GET : curl -X GET http://localhost:7127/players <br>
+POST : curl -X POST http://localhost:7127/players/new -d ' < new data > ' <br>
+PUT : curl -X POST http://localhost:7127/update/{name} -d ' < updated data > ' <br>
 
 ## CAUTIONS ##
 - All the api call is authorized by JWT token. So we need to pass token as a valid "token" header while calling methods (except for homepage request) by postman or curl.
