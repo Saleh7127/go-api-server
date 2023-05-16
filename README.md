@@ -40,7 +40,7 @@ type Stats struct {
 | Method |                    url                    | payload | actions                                  |
 |--------|:-----------------------------------------:|--------:|------------------------------------------|
 | GET    |       ```http://localhost:8080/```        |      No | Call home page and get new token         |
-| GET    |    ```http://localhost:8080/players```    |      No | Call all the players exist in data model |
+| GET    |    ```http://localhost:8080/players```    |      No | Call all the players from data model     |
 | GET    | ```http://localhost:8080/player/{name}``` |      No | Call by a specific player name           |
 | POST   |  ```http://localhost:8080/players/new```  |     Yes | Add new player to the data base          |
 | PUT    | ```http://localhost:8080/update/{name}``` |     Yes | Update a specific player by calling name |
